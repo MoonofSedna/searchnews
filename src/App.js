@@ -15,7 +15,7 @@ function App() {
 
     const ConsultAPI = async () => {
 
-      const url = `http://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=952c0a6feaaa4917a5ec48db285d65da`;
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=952c0a6feaaa4917a5ec48db285d65da`;
 
       const result = await fetch(url);
       const news = await result.json();
