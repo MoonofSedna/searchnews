@@ -30,7 +30,7 @@ function App() {
   return (
     <Fragment>
       <Header 
-        title= "Search Notices"
+        title= "Search News"
       />
 
       <div className="container-t">
