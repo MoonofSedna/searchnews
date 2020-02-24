@@ -1,35 +1,44 @@
 body{
-    background-color: azure;
-    
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+}
+
+.bg-log{
+    background-image: url(./img-1.jpg);
+    background-size: cover;
+    padding: 2rem;
+}
+
+.btn{
+    margin: auto;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.img-l{
+    width: 100%;
 }
 
 .container-t{
-
-    
-    background: url('./img-1.jpg');
-    background-size: cover;
-    padding: 5rem;
     margin-bottom: 3rem;
 }
 
-.title{
-
-    font-size: 2rem! important;
-    font-family: 'Saira'! important;
-
-}
-
 h3{
-
     font-size: 1.5rem;
-
 }
 
 .card{
-
-   padding: .8rem;
-   width: auto; 
-   margin: 5px auto! important;
-  
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.589) ;
+    padding: 1.5rem;
+    margin:auto! important;
 }
 
+@media screen and (min-width: 1024px) {
+    .img-l{
+        width: 60%;
+        margin: auto;
+    }
+}

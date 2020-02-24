@@ -2,38 +2,36 @@ import React from 'react';
 
 
 
-const News = ({newsitem}) => {
-    
+    const News = ({newsitem}) => {
+        
+        //****Extract data ****//
 
-    //****Extract data ****//
+        const {urlToImage, url, title, description} = newsitem
 
-    const {urlToImage, url, title, description} = newsitem
+        const Imagen = (urlToImage) 
 
-    const Imagen = (urlToImage) ?
+        ? <div className="card-image"> 
+            <img src={urlToImage} alt={title}/>
+        </div> 
 
-    <div className="card-image"> 
-        <img src={urlToImage} alt={title}/>
-                   
-    </div> 
+        : null;
 
-    : null;
-
-    return (
-        <div className="col s12 m6 card-c l6 ">
-            <div className="card">
-                 {Imagen}
-                <div className="card-content">
-                    <h3>{title}</h3>
-                    <p>{description}</p>
+        return (
+            <div className="col-md-6 col-lg-4 mt-4 ">
+                <div className="card">
+                <div className="img-fluid"> {Imagen}</div>   
+                        <div className="card-content">
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                        </div>
+                        <a
+                            href={url}
+                            target="_black"
+                            rel="noopener norederrer"
+                            className="btn btn-danger"> See full
+                        </a>
                 </div>
-                    <a
-                    href={url}
-                    target="_black"
-                    rel="noopener norederrer"
-                    className="waves-effect waves-light btn"> See full</a>
-               
-            </div>
-        </div> );
-}
+            </div> );
+    }
 
 export default News;
