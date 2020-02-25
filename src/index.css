@@ -27,11 +27,12 @@ body{
 
 h6{
     font-weight: bold;
+    color:black;
 }
 
 .card{
-    border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.589) ;
+    border-radius: 10px! important;
+    background-color:rgba(255, 255, 255, 0.589)! important;
     padding: 1.5rem;
     margin:auto! important;
 }
