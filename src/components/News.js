@@ -21,7 +21,7 @@ import React from 'react';
                 <div className="card">
                 <div className="img-fluid"> {Imagen}</div>   
                         <div className="card-content">
-                            <h6>{title}</h6>
+                            <h5>{title}</h5>
                             <p>{description}</p>
                         </div>
                         <a
